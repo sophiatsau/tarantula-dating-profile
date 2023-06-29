@@ -1,0 +1,102 @@
+/* general */
+
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: #333333;
+}
+
+h1,
+form {
+    margin-top: 70px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image img:hover{
+    box-shadow: #FF5193 2px 2px 5px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: #FFD7FF 2px 2px 1px;
+}
+
+/* nav bar format */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height:auto;
+    background-color: #FFD7FF;
+    font-size: large;
+    box-shadow:#FF5193 0px 1px 2px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#FF5193;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 3px;
+}
+
+nav li {
+    display: inline-block;
+    width: 23%;
+    height: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    text-shadow: white 1px 1px 1px;
+    color: red;
+}
+
+/* profile format */
+.profile h2 {
+    background-color: #FFD7FF;
+    border-radius: 5px;
+    margin-bottom: 0;
+    padding: 3px;
+    text-align: center;
+    box-shadow: #FF5193 1px 1px 1px;
+}
+
+.profile p {
+    margin: 5px 3%;
+}
+
+.profile ul {
+    margin: 5px 3%;
+    list-style-type: none;
+}
+
+.profile ul>li::before {
+    content: "💖";
+}
+
+.profile img {
+    box-shadow: #FF5193 1px 1px 1px;
+}
+
+.warning {
+    text-align: center;
+    font-size: larger;
+    padding: 20px;
+}
+
+.warning em {
+    font-weight: bolder;
+    color: red;
+}
