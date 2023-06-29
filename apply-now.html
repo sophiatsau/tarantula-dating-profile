@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>💖Single Spiders in Your Area!💖</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/spider.ico" type="image/x-icon">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="album.html">Saucy Pics</a></li>
+                <li><a href="breeding-info.html">How Does Breeding Work?</a></li>
+                <li><a href="apply-now.html">Apply Now to Be My Girlfriend!</a></li>
+            </ul>
+        </nav>
+
+        <form action="" method="post">
+            <fieldset>
+                <legend>Bachelorette Application</legend>
+
+                <div>
+                    <label for="name">Applicant Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div>
+                    <label for="humanName">Applicant's Human's Name:</label>
+                    <input type="text" id="humanName" name="human_name" required>
+                </div>
+
+                <div>
+                    <label for="location">Applicant's Current Location (City, State):</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+
+                <div>
+                    <p>
+                        Please select your preferred contact method:
+                    </p>
+                    <div>
+                        <input type="radio" id="phone" name="contact" value="phone" required>
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="contactInfo" name="phone_number">
+                    </div>
+
+                    <div>
+                        <input type="radio" id="email" name="contact" value="email">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="contactInfo" name="email_address">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="biography">About Me:</label>
+                    <textarea id="biography" name="biography" required>I am a spider who...</textarea>
+                </div>
+
+                <p>
+                    Do you have the following qualities required for a successful mating session?
+                </p>
+                <div>
+                    <input type="checkbox" id="female" name="female" required>
+                    <label for="female">I am a female.</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="species" name="species" required>
+                    <label for="species">I am a <em>Grammostola pulchra</em></label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="age" name="age" required>
+                    <label for="age">I am old enough</label>
+                </div>
+
+                <div>
+                    <button type="submit" id="applicant-submit-button">💖Submit Application💖</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
