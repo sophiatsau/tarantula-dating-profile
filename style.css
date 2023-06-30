@@ -4,6 +4,7 @@
     font-family:Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     color: #333333;
+    position: relative;
 }
 
 h1,
@@ -12,15 +13,12 @@ form {
 }
 
 img {
-    width: 100%;
     border-radius: 10px;
+    width: 100%;
 }
 
-.image img:hover{
-    box-shadow: #FF5193 2px 2px 5px;
-}
-
-h1 {
+h1,
+legend {
     text-align: center;
     text-shadow: #FFD7FF 2px 2px 1px;
 }
@@ -28,19 +26,21 @@ h1 {
 /* nav bar format */
 nav {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     height:auto;
     background-color: #FFD7FF;
-    font-size: large;
+    font-size: medium;
     box-shadow:#FF5193 0px 1px 2px;
 }
 
 nav a{
     text-decoration: none;
     color:#FF5193;
+    font-weight: bold;
 }
 
 nav ul{
@@ -64,6 +64,7 @@ nav a:hover{
 }
 
 /* profile format */
+
 .profile h2 {
     background-color: #FFD7FF;
     border-radius: 5px;
@@ -71,6 +72,11 @@ nav a:hover{
     padding: 3px;
     text-align: center;
     box-shadow: #FF5193 1px 1px 1px;
+}
+
+.profile p,
+.profile ul {
+    font-size: large;
 }
 
 .profile p {
@@ -99,4 +105,159 @@ nav a:hover{
 .warning em {
     font-weight: bolder;
     color: red;
+}
+
+/* gallery format */
+.image {
+    width: 550px;
+    background-color: #FFD7FF;
+    box-shadow: #FF5193 1px 1px 1px;
+    border-radius: 10px;
+    margin: 20px auto;
+    align-items: center;
+    font-size: large;
+}
+
+.image img{
+    padding: 0;
+    margin: 0;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.caption {
+    padding: 5px 20px 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.image:hover{
+    box-shadow: #FF5193 2px 2px 5px;
+}
+
+/* info format */
+
+.links a {
+    color:#FF5193;
+    font-weight: bold;
+}
+
+.links li {
+    padding-top: 10px;
+}
+
+.links {
+    background-color: #FFD7FF;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 5px 5px 20px 0px;
+    width: 550px;
+    box-shadow: #FF5193 1px 1px 1px;
+}
+
+/* application format  */
+
+form {
+    width: 550px;
+    margin: 70px auto;
+}
+
+fieldset {
+    background-color: #FFD7FF;
+    border-radius: 10px;
+    border: none;
+    box-shadow: #FF5193 1px 1px 1px;
+    position: relative;
+}
+
+legend {
+    font-size: xx-large;
+    font-weight: bold;
+    box-shadow: #FF5193 1px 1px 1px;
+    background-color: white;
+    padding: 0px 5px 3px;
+    border-radius: 10px;
+}
+
+form div {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 40% 55%;
+    column-gap: 3%;
+    height: 3em;
+    text-align: right;
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+}
+
+input {
+    height: 1.5em;
+    display: inline-block;
+}
+
+form p {
+    text-align: center;
+    margin: 20px 10px 0;
+    position: relative;
+    padding: 0;
+    height: 1em;
+    display: inline-block;
+}
+
+form .triple {
+    /* grid-template-columns: 4% 25% 55%; */
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    height:auto;
+}
+
+.triple input {
+    right: 0px;
+}
+
+#biography {
+    height: 5em;
+    display: block;
+    position: relative;
+}
+
+.check {
+    text-align: left;
+    height: 1.5em;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+button {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    border:#FF5193 solid 1px;
+}
+
+button:hover {
+    background-color: #FF5193;
+}
+
+/* responding to screen size */
+
+@media screen and (max-width: 599px) {
+    .image {
+        width: auto;
+        font-size: medium;
+    }
+
+    form,
+    .links {
+        width: auto;
+    }
 }

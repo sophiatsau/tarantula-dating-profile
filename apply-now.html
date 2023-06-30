@@ -35,49 +35,45 @@
                     <input type="text" id="location" name="location" required>
                 </div>
 
-                <div>
-                    <p>
-                        Please select your preferred contact method:
-                    </p>
-                    <div>
-                        <input type="radio" id="phone" name="contact" value="phone" required>
-                        <label for="phone">Phone number:</label>
-                        <input type="tel" id="contactInfo" name="phone_number">
-                    </div>
-
-                    <div>
-                        <input type="radio" id="email" name="contact" value="email">
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="contactInfo" name="email_address">
-                    </div>
+                <p>
+                    Please select your preferred contact method:
+                </p>
+                <div class="triple">
+                    <input type="radio" id="phone" name="contact" value="phone" required>
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="contactInfo" name="phone_number">
                 </div>
+
+                <div class="triple">
+                    <input type="radio" id="email" name="contact" value="email">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="contactInfo" name="email_address">
+                </div><br><br>
 
                 <div>
                     <label for="biography">About Me:</label>
-                    <textarea id="biography" name="biography" required>I am a spider who...</textarea>
-                </div>
+                    <textarea id="biography" name="biography" required>My spider wisdom is...</textarea>
+                </div><br>
 
                 <p>
-                    Do you have the following qualities required for a successful mating session?
+                    Do you possess the following qualities required for a successful mating session?
                 </p>
-                <div>
+                <div class="check">
                     <input type="checkbox" id="female" name="female" required>
                     <label for="female">I am a female.</label>
                 </div>
 
-                <div>
+                <div class="check">
                     <input type="checkbox" id="species" name="species" required>
                     <label for="species">I am a <em>Grammostola pulchra</em></label>
                 </div>
 
-                <div>
+                <div class="check">
                     <input type="checkbox" id="age" name="age" required>
                     <label for="age">I am old enough</label>
                 </div>
 
-                <div>
-                    <button type="submit" id="applicant-submit-button">💖Submit Application💖</button>
-                </div>
+                <button type="submit" id="applicant-submit-button">💖Submit Application💖</button>
 
             </fieldset>
         </form>
